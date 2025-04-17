@@ -118,7 +118,6 @@ This chatbot is especially suited for:
 
 - Integration with real-time news APIs
 - More robust language model fine-tuning
-- Multilingual support beyond French
 
 ---
 
