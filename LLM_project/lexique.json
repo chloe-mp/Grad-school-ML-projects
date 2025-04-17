@@ -1,0 +1,120 @@
+{
+    "intelligence_artificielle": [
+        "IA",
+        "machine learning",
+        "deep learning",
+        "réseaux neuronaux",
+        "GPT",
+        "génératif",
+        "intelligence automatisée"
+    ],
+    "cybersécurité": [
+        "hacking",
+        "sécurité informatique",
+        "pare-feu",
+        "cryptographie",
+        "protection des données",
+        "antivirus",
+        "SASE"
+    ],
+    "informatique_quantique": [
+        "quantique",
+        "qubits",
+        "ordinateur quantique",
+        "superposition",
+        "Majorana",
+        "entrelacement quantique"
+    ],
+    "cloud_computing": [
+        "cloud",
+        "serveur distant",
+        "stockage en ligne",
+        "informatique en nuage",
+        "virtualisation"
+    ],
+    "robotique": [
+        "robots",
+        "automatisation",
+        "humanoïde",
+        "mécatronique",
+        "IA embarquée"
+    ],
+    "réalité_mixte": [
+        "réalité augmentée",
+        "réalité virtuelle",
+        "AR",
+        "VR",
+        "fusion des réalités",
+        "holographie"
+    ],
+    "réseaux": [
+        "5G",
+        "6G",
+        "réseau sans fil",
+        "connexion rapide",
+        "latence",
+        "IoT"
+    ],
+    "stockage_données": [
+        "stockage ADN",
+        "SSD",
+        "HDD",
+        "base de données",
+        "Big Data",
+        "compression"
+    ],
+    "expressions_temporaires": [
+        "dernièrement",
+        "en 2024",
+        "récemment",
+        "cette année",
+        "en 2025",
+        "actuellement"
+    ],
+    "termes_typographiques": [
+        "majuscule",
+        "ponctuation",
+        "grammaire",
+        "accents",
+        "orthographe"
+    ],
+    "termes_évaluatifs": [
+        "révolutionnaire",
+        "innovant",
+        "obsolète",
+        "performant",
+        "efficace",
+        "disruptif"
+    ],
+    "intentions_utilisateur": {
+        "recherche": [
+            "quelles sont",
+            "montre-moi",
+            "donne-moi",
+            "liste-moi"
+        ],
+        "explication": [
+            "c'est quoi",
+            "comment fonctionne",
+            "explique-moi",
+            "définition"
+        ],
+        "comparaison": [
+            "différence entre",
+            "lequel est mieux",
+            "vs",
+            "comparaison"
+        ],
+        "source": [
+            "où lire",
+            "source",
+            "article",
+            "publication"
+        ],
+        "historique": [
+            "afficher historique",
+            "dernières conversations",
+            "récapitulatif"
+        ]
+    }
+}

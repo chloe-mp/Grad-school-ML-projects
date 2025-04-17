@@ -1,0 +1,45 @@
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+def init_LLM():
+    MODEL_NAME = "/content/drive/MyDrive/gemma-2b-it"  
+    tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
+    
+    # Détection du device
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Utilisation du device : {device}")
+    
+    # Chargement du modèle avec les paramètres adaptés
+    if device == "cuda":
+        model = AutoModelForCausalLM.from_pretrained(
+            MODEL_NAME,
+            torch_dtype=torch.float16,
+            device_map="auto",
+            trust_remote_code=True
+        )
+    else:
+        model = AutoModelForCausalLM.from_pretrained(
+            MODEL_NAME,
+            torch_dtype=torch.float32,
+            device_map={"": "cpu"},
+            trust_remote_code=True
+        )
+    return tokenizer, model, device
+
+# Initialisation
+tokenizer, model, device = init_LLM()
+
+def call_LLM(prompt):
+    """Génère une réponse à partir d'un prompt."""
+    # On transfère l'entrée sur le device approprié
+    inputs = tokenizer(prompt, return_tensors="pt").to(device)
+    outputs = model.generate(**inputs, max_new_tokens=500)
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+if __name__ == "__main__":
+    while True:
+        user_input = input("Vous : ")
+        if user_input.lower() in ["quit", "exit"]:
+            break
+        response = call_LLM(user_input)
+        print("Bot :", response)
