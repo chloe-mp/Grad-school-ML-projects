@@ -1,0 +1,9 @@
+File type = "ooTextFile"
+Object class = "Confusion"
+
+numberOfColumns = 2 
+columnLabels []: 
+"E"	"e"	
+numberOfRows = 2 
+row [1]: "E"	4	4
+row [2]: "e"	5	5

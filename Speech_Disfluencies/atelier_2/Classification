@@ -1,0 +1,17 @@
+path$ = ""
+form Input Classification utilisant l'AFD d'une matrice individus-variables d'apprentissage
+    comment Entrez le nom d'un fichier d'apprentissage de type TableOfReal
+    sentence appNom AppMFCC
+    comment Entrez le nom d'un fichier de test de type TableOfReal
+    sentence testNom TestMFCC
+endform
+
+file$ = path$ + appNom$+".TableOfReal"
+Read from file... 'file$'
+To Discriminant
+file$ = path$ + testNom$+".TableOfReal"
+Read from file... 'file$'
+select TableOfReal 'testNom$'
+plus Discriminant 'appNom$'
+To ClassificationTable... yes no
+

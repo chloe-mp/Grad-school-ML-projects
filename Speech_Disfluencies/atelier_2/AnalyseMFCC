@@ -1,0 +1,12 @@
+path$ = "/Users/chloe/Downloads/atelier_3/"
+
+form Input Lecture d'un fichier de parole pour une analyse MFCC centiseconde
+    comment Entrez le nom d'un fichier de type wav
+    sentence sigNom App
+endform
+
+file$ = path$ + sigNom$+".wav"
+Read from file... 'file$'
+To MFCC... 6 0.02 0.01 100 100 0
+file$ = path$ + sigNom$+".MFCC"
+Write to text file... 'file$'

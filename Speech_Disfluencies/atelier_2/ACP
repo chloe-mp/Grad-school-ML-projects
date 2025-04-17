@@ -1,0 +1,21 @@
+path$ = "/Users/chloe/Downloads/atelier_2/"
+form Input Lecture d'une matrice individus-variables pour une ACP
+    comment Entrez le nom d'un fichier de type TableOfReal
+    sentence matNom voyellesFR
+endform
+
+file$ = path$ + matNom$+".TableOfReal"
+print 'file$' 
+printline
+Read from file... 'file$'
+To PCA
+select TableOfReal 'matNom$'
+plus PCA 'matNom$'
+To Configuration... 2
+Erase all
+Draw... 1 2 0 0 0 0 12 yes + no
+exit
+
+
+
+
