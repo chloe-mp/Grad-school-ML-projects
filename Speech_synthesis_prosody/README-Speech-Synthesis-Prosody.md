@@ -65,16 +65,6 @@ The acoustic analysis and classification results confirm that **prosody is a str
 
 ---
 
-## 📂 Files
-
-| File | Description |
-|------|-------------|
-| `Projet_3_Montacié.ipynb` | Jupyter notebook for analysis |
-| `prosody_analysis_librosa.csv` | Extracted prosodic features |
-| *(Optional)* `Projet synthèse de la parole.docx` | Full report (not needed for execution) |
-
----
-
 ## 🧰 Tools & Libraries
 
 - [CoquiTTS](https://github.com/coqui-ai/TTS)
